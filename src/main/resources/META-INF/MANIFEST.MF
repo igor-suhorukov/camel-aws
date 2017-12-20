@@ -1,0 +1,97 @@
+Manifest-Version: 1.0
+Export-Service: org.apache.camel.spi.ComponentResolver;component=aws-c
+ w,org.apache.camel.spi.ComponentResolver;component=aws-ddb,org.apache
+ .camel.spi.ComponentResolver;component=aws-ec2,org.apache.camel.spi.C
+ omponentResolver;component=aws-kinesis,org.apache.camel.spi.Component
+ Resolver;component=aws-kinesis-firehose,org.apache.camel.spi.Componen
+ tResolver;component=aws-lambda,org.apache.camel.spi.ComponentResolver
+ ;component=aws-s3,org.apache.camel.spi.ComponentResolver;component=aw
+ s-sdb,org.apache.camel.spi.ComponentResolver;component=aws-ses,org.ap
+ ache.camel.spi.ComponentResolver;component=aws-sns,org.apache.camel.s
+ pi.ComponentResolver;component=aws-sqs,org.apache.camel.spi.Component
+ Resolver;component=aws-swf
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.camel.camel-aws
+Built-By: camel
+Bnd-LastModified: 1510323944019
+Specification-Title: Camel :: AWS
+Implementation-Vendor-Id: org.apache.camel
+Bundle-DocURL: https://www.apache.org/
+Import-Package: org.apache.camel;version="[2.20,2.21)",org.apache.came
+ l.impl;version="[2.20,2.21)",org.apache.camel.spi;version="[2.20,2.21
+ )",org.apache.camel.support;version="[2.20,2.21)",org.apache.camel.ut
+ il;version="[2.20,2.21)",org.slf4j;version="[1.7,2)",com.amazonaws,co
+ m.amazonaws.auth,com.amazonaws.client.builder,com.amazonaws.regions,c
+ om.amazonaws.services.cloudfront.model,com.amazonaws.services.cloudwa
+ tch,com.amazonaws.services.cloudwatch.model,com.amazonaws.services.dy
+ namodbv2,com.amazonaws.services.dynamodbv2.model,com.amazonaws.servic
+ es.ec2,com.amazonaws.services.ec2.model,com.amazonaws.services.kinesi
+ s,com.amazonaws.services.kinesis.model,com.amazonaws.services.kinesis
+ firehose,com.amazonaws.services.kinesisfirehose.model,com.amazonaws.s
+ ervices.lambda,com.amazonaws.services.lambda.model,com.amazonaws.serv
+ ices.s3,com.amazonaws.services.s3.model,com.amazonaws.services.simple
+ db,com.amazonaws.services.simpledb.model,com.amazonaws.services.simpl
+ eemail,com.amazonaws.services.simpleemail.model,com.amazonaws.service
+ s.simpleworkflow,com.amazonaws.services.simpleworkflow.flow,com.amazo
+ naws.services.simpleworkflow.flow.common,com.amazonaws.services.simpl
+ eworkflow.flow.core,com.amazonaws.services.simpleworkflow.flow.generi
+ c,com.amazonaws.services.simpleworkflow.flow.worker,com.amazonaws.ser
+ vices.simpleworkflow.model,com.amazonaws.services.sns,com.amazonaws.s
+ ervices.sns.model,com.amazonaws.services.sqs,com.amazonaws.services.s
+ qs.model,com.amazonaws.util,javax.mail;version="[1.6,2)",org.osgi.fra
+ mework;version="[1.5,2)",org.osgi.framework.wiring;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Export-Package: org.apache.camel.component.aws.common;version="2.20.1"
+ ;uses:="org.apache.camel",org.apache.camel.component.aws.cw;version="
+ 2.20.1";uses:="com.amazonaws.services.cloudwatch,org.apache.camel,org
+ .apache.camel.impl,org.apache.camel.spi",org.apache.camel.component.a
+ ws.ddb;version="2.20.1";uses:="com.amazonaws.services.dynamodbv2,com.
+ amazonaws.services.dynamodbv2.model,org.apache.camel,org.apache.camel
+ .impl,org.apache.camel.spi",org.apache.camel.component.aws.ddbstream;
+ version="2.20.1";uses:="com.amazonaws.services.dynamodbv2,com.amazona
+ ws.services.dynamodbv2.model,org.apache.camel,org.apache.camel.impl,o
+ rg.apache.camel.spi",org.apache.camel.component.aws.ec2;version="2.20
+ .1";uses:="com.amazonaws.services.ec2,org.apache.camel,org.apache.cam
+ el.impl,org.apache.camel.spi",org.apache.camel.component.aws.firehose
+ ;version="2.20.1";uses:="com.amazonaws.services.kinesisfirehose,org.a
+ pache.camel,org.apache.camel.impl,org.apache.camel.spi",org.apache.ca
+ mel.component.aws.kinesis;version="2.20.1";uses:="com.amazonaws.servi
+ ces.kinesis,com.amazonaws.services.kinesis.model,org.apache.camel,org
+ .apache.camel.impl,org.apache.camel.spi",org.apache.camel.component.a
+ ws.lambda;version="2.20.1";uses:="com.amazonaws.services.lambda,org.a
+ pache.camel,org.apache.camel.impl,org.apache.camel.spi",org.apache.ca
+ mel.component.aws.s3;version="2.20.1";uses:="com.amazonaws.services.s
+ 3,com.amazonaws.services.s3.model,org.apache.camel,org.apache.camel.i
+ mpl,org.apache.camel.spi",org.apache.camel.component.aws.sdb;version=
+ "2.20.1";uses:="com.amazonaws.services.simpledb,com.amazonaws.service
+ s.simpledb.model,org.apache.camel,org.apache.camel.impl,org.apache.ca
+ mel.spi,org.slf4j",org.apache.camel.component.aws.ses;version="2.20.1
+ ";uses:="com.amazonaws.services.simpleemail,org.apache.camel,org.apac
+ he.camel.impl,org.apache.camel.spi",org.apache.camel.component.aws.sn
+ s;version="2.20.1";uses:="com.amazonaws.services.sns,org.apache.camel
+ ,org.apache.camel.impl,org.apache.camel.spi",org.apache.camel.compone
+ nt.aws.sqs;version="2.20.1";uses:="com.amazonaws.services.sqs,com.ama
+ zonaws.services.sqs.model,org.apache.camel,org.apache.camel.impl,org.
+ apache.camel.spi",org.apache.camel.component.aws.swf;version="2.20.1"
+ ;uses:="com.amazonaws.services.simpleworkflow,com.amazonaws.services.
+ simpleworkflow.flow,com.amazonaws.services.simpleworkflow.flow.core,c
+ om.amazonaws.services.simpleworkflow.flow.generic,com.amazonaws.servi
+ ces.simpleworkflow.flow.worker,com.amazonaws.services.simpleworkflow.
+ model,org.apache.camel,org.apache.camel.impl,org.apache.camel.spi"
+Bundle-Name: camel-aws
+Implementation-Title: Camel :: AWS
+Bundle-Description: A Camel Amazon Web Services Components
+Implementation-Version: 2.20.1
+Karaf-Info: Camel;camel-aws=2.20.1
+Specification-Vendor: The Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-Vendor: The Apache Software Foundation
+Tool: Bnd-3.3.0.201609221906
+Implementation-Vendor: The Apache Software Foundation
+Bundle-Version: 2.20.1
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_101
+Specification-Version: 2.20.1
+Implementation-URL: http://camel.apache.org/camel-parent/components/ca
+ mel-aws
+
